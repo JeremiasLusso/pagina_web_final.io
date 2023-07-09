@@ -1,0 +1,326 @@
+/* General */
+body{
+    background-color: black;
+}
+
+/* Encabezado */
+#Encabezado{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url('imagenes/otros/index/fondo1.jpg');
+    
+}
+
+#Encabezado h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 500%;
+    color: black;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    /* background-color: chocolate; */
+}
+
+#Logo{
+    height: 200px;
+    width: auto;
+}
+
+.Links{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: chocolate;
+    border-color: white;
+}
+
+.Links:hover{
+    color: black;
+    background-color: bisque;
+    border-color: black;
+}
+
+/* Main */
+
+.Pizzas{
+    margin-bottom: 1%;
+}
+
+#Menu{
+    background-image: url('imagenes/otros/index/pexels-umut-sarıalan-16722255.jpg');
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    color: white;
+    margin-left: 3%;
+}
+
+#Menu h1{
+    font-size: 300%;
+    text-align: center;
+}
+
+#Menu h5{
+    text-decoration: underline;
+    font-size: 130%;
+    text-align: left;
+}
+
+#Menu p{
+    text-align: justify;
+    font-size: 100%;
+}
+
+/* Pie de pagina */
+.Redes_sociales{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-inline: 10%;
+}
+
+.Redes_sociales:hover{
+    color: bisque;
+    text-decoration: underline;
+}
+
+#pie_de_pagina
+{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+#pie_de_pagina h1{
+    text-decoration: underline;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin: 1%;
+}
+
+/* Quienes somos */
+/* #Encabezado_2{
+    display: block;
+    margin: 0 auto;
+    background-image: url('imagenes/otros/index/fondo1.jpg');
+} */
+
+/* #Encabezado_2 h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 400%;
+    margin: 5px;
+} */
+
+#main_2
+{
+    display: block;
+    text-align: left;
+    align-items: end;
+    margin: 3%;
+}
+#main_2 p
+{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 160%;
+    margin: 3%;
+}
+
+#main_2 h1{
+    margin: 1px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    text-decoration: underline;
+}
+
+#parrafo1{
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+#img_1{
+    height: 300px;
+    width: auto;
+    float: right;
+    margin: 0 auto;
+}
+#parrafo2{
+    margin-top: 8%;
+    display: block;
+    align-content: center;
+    justify-items: center;
+}
+
+#img_2{
+    height: auto;
+    width: 400px;
+    float: right;
+    margin: 0 auto;
+}
+#parrafo3{
+    margin-top: 5%;
+    display: block;
+    align-items: center;
+}
+
+#img_3{
+    height: 270px;
+    width: auto;
+    float: right;
+    margin: 0 auto;
+}
+
+/* Donde encontrarnos */
+#Ubicacion{
+    color: white;
+    background-image: url('imagenes/otros/index/pexels-umut-sarıalan-16722255.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.mapa {
+    text-align: center;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+#mapa_google{
+    margin: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 80%;
+}
+
+/* Galeria de fotos */
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+#body_galeria{
+    /* background-color: #FDF0D5; */
+    background-image: url('imagenes/otros/index/pexels-umut-sarıalan-16722255.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#video{
+    margin: 2%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    color: white;
+}
+
+.videos{
+    margin: 2%;
+}
+
+.slider-frame {
+    color: white;
+	width: 40%;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* Pedidos */
+#body_pedidos{
+    background-image: url('imagenes/otros/index/pexels-umut-sarıalan-16722255.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#main_pedidos{
+    color: white;
+    height: 500px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 150%;
+}
+#formulario{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#botonera{
+    text-align: center;
+}
+
+#formulario button{
+    display: inline;
+    align-content: center;
+    margin: 15px;
+}
+
+.leyendas{
+    margin: 5px;
+
+}
+
+#nombre, #apellido, #numero, #opcion {
+    margin: 3px;
+}
+
+.ingrediente{
+    margin: 20px;
+}
+
+.texto{
+    height: 30px;
+    width: 90%;
+}
+
+#comentario{
+    height: 80px;
+    width: 90%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/otros/favicon.png" />
+    <script src="script.js"></script>
+    <title>Pedidos</title>
+</head>
+<body id="body_pedidos">
+    <header>
+        <div id="Encabezado">
+            <img src="imagenes/Logo/DOn emilio Pizzeria_fondo_blanco_chica.png" id="Logo" alt="Logo_empresa">
+            <h1>Haz tu pedido</h1>
+        </div>
+    </header>
+    <hr>
+    <button onclick="location.href='index.html'" class="Links">→Volver al inicio</button>
+    <main id="main_pedidos">
+        <div id="formulario">
+            <span id="name" class="leyendas">Nombre:</span>
+            <input type="text" name="nombre" id="nombre" class="texto" placeholder="Coloque su nombre aqui"><br>
+            <span id="last_name" class="leyendas">Apellido:</span>
+            <input type="text" name="apellido" id="apellido" class="texto" placeholder="Coloque su apellido aqui"><br>
+            <span id="telefono" class="leyendas">Numero de telefono:</span>
+            <input type="number" name="numero" id="numero" class="texto" placeholder="Coloque su numero de telefono aqui"><br>
+            <span id="tipos_p" class="leyendas">Seleccione el tipo de pizza:</span>
+            <select name="pizza" id="opcion" class="texto">
+                <option value="" hidden>Presione aqui</option>
+                <option value="1">Margarita</option>
+                <option value="2">Pepperoni</option>
+                <option value="3">Hawaiana</option>
+                <option value="4">Vegetariana</option>
+                <option value="5">Cuatro Quesos</option>
+                <option value="6">Carnívora</option>
+                <option value="7">BBQ Pollo</option>
+            </select><br>
+            <span id="t_pizza" class="leyendas">Seleccione los ingredientes extras:</span><br>
+            <input type="checkbox" name="ingredientes" value="aceitunas" class="ingrediente">Aceitunas 
+            <input type="checkbox" name="ingredientes" value="milan" class="ingrediente">Milan
+            <input type="checkbox" name="ingredientes" value="champiñones" class="ingrediente">Champiñones
+            <br>
+            <span id="coments" class="leyendas">Comentarios:</span>
+            <textarea name="comment" id="comentario" placeholder="Click aqui para escribir"></textarea>
+            <div id="botonera">
+                <button type="button" onclick="pedido()" class="Links">Hacer pedido</button>
+                <button type="button" onclick="borrar()" class="Links">Borrar</button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </main>
+    
+</body>
+</html>
