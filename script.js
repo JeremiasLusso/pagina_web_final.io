@@ -1,4 +1,5 @@
-function pedido() {
+function pedido() 
+{
     // Obtener los valores del formulario
     var nombre = document.getElementById('nombre').value;
     var apellido = document.getElementById('apellido').value;
@@ -7,24 +8,47 @@ function pedido() {
     
     // Obtener los ingredientes extras seleccionados
     var ingredientesExtras = document.querySelectorAll('.ingrediente:checked');
-    var ingredientesSeleccionados = Array.from(ingredientesExtras).map(function(ingrediente) {
+    var ingredientesSeleccionados = Array.from(ingredientesExtras).map(function(ingrediente)
+    {
       return ingrediente.value;
     }).join(', ');
     
     var comentario = document.getElementById('comentario').value;
+
+    if((nombre == "")||(apellido == "")||(numero == "")||(tipoPizza== "Presione aqui"))
+    {
+      if(nombre == "")
+      {
+        alert("Debe poner su nombre en el campo requerido.");
+      }
+      if(apellido == "")
+      {
+        alert("Debe colocar su apellido en el campo requerido.");
+      }
+      if(numero == "")
+      {
+        alert("Debe colocar su numero de telefono en el campo requerido.");
+      }
+      if(tipoPizza== "Presione aqui")
+      {
+        alert("Debe seleccionar el tipo de pizza que desea en el campo requerido.")
+      }
+    }else
+    {
+      // Construir el mensaje con los detalles del pedido
+      var mensaje = 'Hola ' + nombre + ' ' + apellido + ', el precio de su pedido será enviado al ' + numero + '.\n\n';
+      mensaje += 'Detalles del pedido:\n';
+      mensaje += tipoPizza + '\n';
+      mensaje += 'Ingredientes extras: ' + ingredientesSeleccionados + '\n';
+      mensaje += comentario;
     
-    // Construir el mensaje con los detalles del pedido
-    var mensaje = 'Hola ' + nombre + ' ' + apellido + ', el precio de su pedido será enviado al ' + numero + '.\n\n';
-    mensaje += 'Detalles del pedido:\n';
-    mensaje += tipoPizza + '\n';
-    mensaje += 'Ingredientes extras: ' + ingredientesSeleccionados + '\n';
-    mensaje += comentario;
-    
-    // Mostrar el mensaje en el elemento con id "resultado"
-    document.getElementById('resultado').innerText = mensaje;
+      // Mostrar el mensaje en el elemento con id "resultado"
+      document.getElementById('resultado').innerText = mensaje;
+    }
   }
   
-  function borrar() {
+  function borrar() 
+  {
     // Restablecer los campos del formulario y el elemento "resultado"
     document.getElementById('nombre').value = '';
     document.getElementById('apellido').value = '';
@@ -32,7 +56,8 @@ function pedido() {
     document.getElementById('opcion').selectedIndex = 0;
     
     var ingredientesExtras = document.querySelectorAll('.ingrediente:checked');
-    ingredientesExtras.forEach(function(ingrediente) {
+    ingredientesExtras.forEach(function(ingrediente) 
+    {
       ingrediente.checked = false;
     });
     

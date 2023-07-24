@@ -304,7 +304,6 @@ body{
 
 .leyendas{
     margin: 5px;
-
 }
 
 #nombre, #apellido, #numero, #opcion {
@@ -323,4 +322,12 @@ body{
 #comentario{
     height: 80px;
     width: 90%;
+}
+
+.is-required:after {
+    content: '*';
+    margin-left: 3px;
+    color: red;
+    font-weight:bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -19,15 +19,15 @@
     <button onclick="location.href='index.html'" class="Links">→Volver al inicio</button>
     <main id="main_pedidos">
         <div id="formulario">
-            <span id="name" class="leyendas">Nombre:</span>
-            <input type="text" name="nombre" id="nombre" class="texto" placeholder="Coloque su nombre aqui"><br>
-            <span id="last_name" class="leyendas">Apellido:</span>
-            <input type="text" name="apellido" id="apellido" class="texto" placeholder="Coloque su apellido aqui"><br>
-            <span id="telefono" class="leyendas">Numero de telefono:</span>
-            <input type="number" name="numero" id="numero" class="texto" placeholder="Coloque su numero de telefono aqui"><br>
-            <span id="tipos_p" class="leyendas">Seleccione el tipo de pizza:</span>
-            <select name="pizza" id="opcion" class="texto">
-                <option value="" hidden>Presione aqui</option>
+            <span id="name" class="leyendas is-required">Nombre:</span>
+            <input type="text" name="nombre" id="nombre" class="texto" placeholder="Coloque su nombre aqui" required><br>
+            <span id="last_name" class="leyendas is-required">Apellido:</span>
+            <input type="text" name="apellido" id="apellido" class="texto" placeholder="Coloque su apellido aqui" required><br>
+            <span id="telefono" class="leyendas is-required">Numero de telefono:</span>
+            <input type="number" name="numero" id="numero" class="texto" placeholder="Coloque su numero de telefono aqui" required><br>
+            <span id="tipos_p" class="leyendas is-required">Seleccione el tipo de pizza:</span>
+            <select name="pizza" id="opcion" class="texto" required>
+                <option value="0" hidden>Presione aqui</option>
                 <option value="1">Margarita</option>
                 <option value="2">Pepperoni</option>
                 <option value="3">Hawaiana</option>
